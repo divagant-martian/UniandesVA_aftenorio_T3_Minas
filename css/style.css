@@ -1,11 +1,19 @@
-.bar {
+bar {
   fill: #43D016;
 }
 
-.bar:hover {
+h1 {
+  color:red;
+}
+
+img {
+  width: 45px;
+}
+
+bar:hover {
   fill: yellow;
 }
 
-.axis--x path {
+axis--x path {
   display: none;
 }

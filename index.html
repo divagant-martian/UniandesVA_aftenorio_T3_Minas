@@ -1,134 +1,61 @@
 <!DOCTYPE html>
-
-<!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
-<h1 style="color: #5e9ca0;">Victimas de Minas Antipersona,  <span style="color: #2b2301;"> y periodo de Gobierno.</span></h1>
-<h2 style="color: #2e6c80;">Registro Victima Antipersona</h2>
-<p>Registro del nucleo basico de las victimas de minas antipersonal (MAP), artefactos explosivos improvisado (AEI) con  
-<br />caracteristicas de minas antipersonal y municiones sin explotar (MUSE) que se han presentado en Colombia en el periodo 
-<br />comprendido entre 1990 al mes anterior de la fecha de corte. 
-<br />
-<br />Se realiza visualizacion Line chart para ver el numero de Victimas en los diferentes periodos de Tiempo 
-<br />y por medio del gobiernos que se encontrada en el momento darnos una idea, identificar y ambientarnos de la situacion 
-<br /> que vivia el pais es ese momento.
-
-
-&nbsp;</p>
-<table>
-<thead>
-<tr>
-  <th>---------------------------------------------------
-<p> Periodos de Gobierno de los presidentes desde 1990 a la actualidad.</p>
-<br /> 
-<ol style="list-style: none; font-size: 14px; line-height: 32px; font-weight: bold;">
-<li style="clear: both;"><img style="float: left;" src="https://static.iris.net.co/semana/upload/images/2015/2/21/418719_152546_1.jpg" width="45" /> Cesar Gaviria 1990-1994</li>
-<li style="clear: both;"><img style="float: left;" src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Samper_cropped.jpg" alt="Word to html" width="45" /> Ernesto Samper  1994-1998</li>
-<li style="clear: both;"><img style="float: left;" src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Andrespastranaarango.png" width="45" /> Andres Pastrana  1998 - 2002</li>
-<li style="clear: both;"><img style="float: left;" src="https://www.las2orillas.co/wp-content/uploads/2017/02/Alvaro-Uribe_Foto-El-Espectador-750x514.jpg" alt="gibberish" width="45" /> Alvaro Uribe  2002 - 2010</li>
-<li style="clear: both;"><img style="float: left;" src="http://www.eltiempo.com/contenido///politica/gobierno/IMAGEN/IMAGEN-14942116-2.png" alt="html table div" width="45" /> Juan Manuel Santos  2010  - 2018 </li>
-
-</ol>
-  </th>
-
-  <th>
 <html>
-<head>
-<title>VA_t3_MinasAnti_201610825</title>
-</head>
+  <meta charset="utf-8">
+
+  <head>
+    <title>Un titulo de verdad 4 gods sake</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body>
+    <div class='container'>
+      <h1>Victimas de Minas Antipersona, y periodo de Gobierno</h1>
+      <h2>Registro Victima Antipersona</h2>
+      <p>
+        Registro del nucleo basico de las victimas de minas antipersonal (MAP), artefactos explosivos
+        improvisado (AEI) con caracteristicas de minas antipersonal y municiones sin explotar (MUSE) que
+        se han presentado en Colombia en el periodo comprendido entre 1990 al mes anterior de la fecha
+        de corte.
+      </p>
+      <p>
+        Se realiza visualizacion Line chart para ver el numero de Victimas en los diferentes
+        periodos de Tiempo y por medio del gobiernos que se encontrada en el momento darnos una idea,
+        identificar y ambientarnos de la situacion  que vivia el pais es ese momento.
+      </p>
+
+      <div class="row">
+        <div class="col-md-3">
+          <h4> Periodos de Gobierno de los presidentes desde 1990 a la actualidad.</h4>
+          <ol>
+            <li> <img src="https://static.iris.net.co/semana/upload/images/2015/2/21/418719_152546_1.jpg"/>  Cesar Gaviria </br>1990 - 1994</li>
+            <li> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Samper_cropped.jpg"/>  Ernesto Samper  </br>1994 - 1998</li>
+            <li> <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Andrespastranaarango.png"/>  Andres Pastrana  </br>1998 - 2002</li>
+            <li> <img src="https://www.las2orillas.co/wp-content/uploads/2017/02/Alvaro-Uribe_Foto-El-Espectador-750x514.jpg"/>  Alvaro Uribe  </br>2002 - 2010</li>
+            <li> <img src="http://www.eltiempo.com/contenido///politica/gobierno/IMAGEN/IMAGEN-14942116-2.png"/>  Juan Manuel Santos  </br>2010 - 2018</li>
+          </ol>
+        </div>
+        <div class="col-md-9">
+          <h4>en el periodo comprendido entre 1990 a la actualidad. A continuacion un diagrama que muestra el numero de Victimas de minas Antipersona</h4>
+            <svg id="thesvg" width="800" height="500"></svg>
+        </div>
+      </div>
+      <br />
+      <h3>
+        Con esta visualizacion se pretendia descubrir si existia algun comportamiento, aumento o disminucion,
+        en el numero de victimas a causa de las minas antipersona enfocandonos un poco en el periodo del proceso
+        de paz que lleva Juan Manuel Santos desde Noviembre de 2012, pense que lo que se iba a observar era que
+        el numero de victimas no iba a variar y se iba a mantener en los ultimos 20 a&ntildeos, pero como podemos
+        obervar en el Line Chart en este periodo que se quiere estudiar ha disminuido considerablemente el numero
+        de Victimas de las minas antipersona en MAP, AEI y MUSE.
+      </h3>
+
+      <p>Nombre: Andres Tenorio.
+        <br />Cod: 201610825
+      </p>
+    </div>
+  </body>
+  <script type="text/javascript" src="./js/index.js"></script>
 </html>
-
-
-<meta charset="utf-8">
-<p>
-<span style="color: #5e9ca0;"> <br /> A continuacion un diagrama que muestra el numero de Victimas de minas Antipersona </span>
-<span style="color: #5e9ca0;"> <br />        en el periodo comprendido entre 1990 a la actualidad. </span> &nbsp;</p>
-
-<style>
-.bar {
-  fill: #43D016;
-}
-
-.bar:hover {
-  fill: yellow;
-}
-
-.axis--x path {
-  display: none;
-}
-
-</style>
-<svg width="800" height="500"></svg>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script>
-
-var svg = d3.select("svg"),
-    margin = {top: 20, right: 20, bottom: 30, left: 50},
-    width = +svg.attr("width") - margin.left - margin.right,
-    height = +svg.attr("height") - margin.top - margin.bottom,
-    g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-var parseTime = d3.timeParse("%d-%b-%y");
-
-var x = d3.scaleTime()
-    .rangeRound([0, width]);
-
-var y = d3.scaleLinear()
-    .rangeRound([height, 0]);
-
-var line = d3.line()
-    .x(function(d) { return x(d.date); })
-    .y(function(d) { return y(d.close); });
-
-d3.csv("data.csv", function(d) {
-  d.date = parseTime(d.date);
-  d.close = +d.close;
-  return d;
-}, function(error, data) {
-  if (error) throw error;
-
-  x.domain(d3.extent(data, function(d) { return d.date; }));
-  y.domain(d3.extent(data, function(d) { return d.close; }));
-
-  g.append("g")
-      .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x))
-    .select(".domain")
-      .remove();
-
-  g.append("g")
-      .call(d3.axisLeft(y))
-    .append("text")
-      .attr("fill", "#000")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", "0.71em")
-      .attr("text-anchor", "end")
-      .text("Price ($)");
-
-  g.append("path")
-      .datum(data)
-      .attr("fill", "none")
-      .attr("stroke", "steelblue")
-      .attr("stroke-linejoin", "round")
-      .attr("stroke-linecap", "round")
-      .attr("stroke-width", 1.5)
-      .attr("d", line);
-});
-
-</script>
-
-        </th>
-</tr>
-</thead>
-<tr>
-  <td></td>
-  <td></td>
-</tr>
-</table>
-<br />
-<h3 style="color: #2e6c80;">
-Con esta visualizacion se pretendia descubrir si existia algun comportamiento, aumento o disminucion,  en el numero de victimas a causa de las minas antipersona enfocandonos un poco en el periodo del proceso de paz que lleva Juan Manuel Santos desde Noviembre de 2012, pense que lo que se iba a observar era que el numero de victimas no iba a variar y se iba a mantener en los ultimos 20 a&ntildeos, pero como podemos obervar en el Line Chart en este periodo que se quiere estudiar ha disminuido considerablemente el numero de Victimas de las minas antipersona en MAP, AEI y MUSE.
-</h3>
-
-<p>Nombre: Andres Tenorio. 
-<br />Cod: 201610825&nbsp;</p>
-

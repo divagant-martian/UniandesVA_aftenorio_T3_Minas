@@ -1,4 +1,4 @@
-var svg = d3.select("svg"),
+var svg = d3.select("#thesvg"),
     margin = {top: 20, right: 20, bottom: 30, left: 50},
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom,
@@ -13,18 +13,18 @@ var y = d3.scaleLinear()
           .rangeRound([height, 0]);
 
 var line = d3.line()
-             .x(function(d) { return x(d.date); })
-             .y(function(d) { return y(d.close); });
+             .x(d => x(d.date))
+             .y(d => y(d.close));
 
-d3.csv("data.csv", function(d) {
+d3.csv("data.csv", d => {
   d.date = parseTime(d.date);
   d.close = +d.close;
   return d;
 }, function(error, data) {
   if (error) throw error;
 
-  x.domain(d3.extent(data, function(d) { return d.date; }));
-  y.domain(d3.extent(data, function(d) { return d.close; }));
+  x.domain(d3.extent(data, d => d.date));
+  y.domain(d3.extent(data, d => d.close));
 
   g.append("g")
    .attr("transform", "translate(0," + height + ")")
