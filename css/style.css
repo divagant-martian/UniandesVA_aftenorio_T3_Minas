@@ -1,0 +1,11 @@
+.bar {
+  fill: #43D016;
+}
+
+.bar:hover {
+  fill: yellow;
+}
+
+.axis--x path {
+  display: none;
+}
